@@ -1,11 +1,12 @@
 WebAssembler
 
 Github: https://github.com/unuzual/webAssembler
+
 Arquitetura de Computadores I (2014-2) - CC / UFRRJ
 
 Integrantes da Equipe:
 Paulo Xavier.
 Gabriel Segobia.
-Reinaldo Moraes
+Reinaldo Moraes.
 
 Professor: Filipe Braida do Carmo
