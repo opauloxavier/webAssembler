@@ -1,0 +1,547 @@
+@CHARSET "ISO-8859-1";
+
+@charset "utf-8";
+@include transition(all 0.4s ease);
+@include filter(blur(5px) grayscale(50%));
+@include transform(scale(0.9));
+
+body{
+	font-family:'Montserrat',sans-serif;
+	margin:0;
+	padding:0;
+	background-color: #eeeeee;
+	text-align:center;
+	color:white;
+	font-size: 12px;
+	font-weight: lighter;
+	overflow-x:hidden;
+}
+
+
+#all {
+	width:1280px;
+	height:1000px;
+	margin:0 auto;  
+}
+
+#menu {
+	background-color:#424242;
+	width:100%;
+	height:110px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#caixaLogo{
+	background-color:#3e8e6b;
+	width:110px;
+	height:110px;
+	z-index:100;
+	cursor:pointer;
+}
+
+#logo {
+		margin: 0 auto;
+		background-image:url(../image/logo.png);
+		background-repeat: no-repeat;
+		width:90px;
+		height:90px;
+		top:10px;
+		position:relative;
+}
+
+#abrir{
+		background-image:url(../image/abrir.png);
+		background-repeat: no-repeat;
+		position:relative;
+		width:40px;
+		height:40px;
+		top:-85px;
+		left:175px;		
+		float:left;
+		cursor:pointer;
+}
+
+#all span {
+		text-align: center;
+		position: relative;
+		top: 45px;
+		left: -3px;
+}
+
+#abrir span {
+	
+	top:46px;
+	
+}
+
+#executar span{
+	left:-16px;
+	
+}
+
+#abrir:hover,active{
+	background-image:url(../image/onHover_abrir.png);
+	color:#75c398;
+	
+}
+
+
+#salvar{
+		background-image:url(../image/salvar.png);
+		background-repeat: no-repeat;
+		position:relative;
+		width:40px;
+		height:40px;
+		top: -84px;
+		left: 220px;
+		float:left;
+		cursor:pointer;
+}
+
+#salvar:hover,active{
+	background-image:url(../image/onHover_salvar.png);
+	color:#75c398;
+}
+
+
+#montar{
+		background-image:url(../image/montar.png);
+		background-repeat: no-repeat;
+		position:relative;
+		width:40px;
+		height:40px;
+		top: -84px;
+		left: 255px;
+		float:left;
+		cursor:pointer;
+}
+
+#montar:hover,active{
+	background-image:url(../image/onHover_montar.png);
+	color:#75c398;
+}
+
+
+#executar{
+		background-image:url(../image/executar.png);
+		background-repeat: no-repeat;
+		position:relative;
+		width:40px;
+		height:40px;
+		top: -84px;
+		left: 300px;
+		float:left;
+		cursor:pointer;
+}
+
+#executar:hover,active{
+	background-image:url(../image/onHover_executar.png);
+	color:#75c398;
+}
+
+
+#step_step{
+		background-image:url(../image/etapas.png);
+		background-repeat: no-repeat;
+		position:relative;
+		width:80px;
+		height:40px;
+		top: -79px;
+		left: 330px;
+		float:left;
+		cursor:pointer;
+}
+
+#step_step span {
+	top: 40px;
+	left: -20px;
+}
+
+#step_step:hover,active{
+	background-image:url(../image/onHover_etapas.png);
+	color:#75c398;
+}
+
+#pesquisar{
+	float: right;
+	top: -85px;
+	left: -20px;
+	position: relative
+}
+
+#caixaPesquisa{
+	width:350px;
+	height:50px;
+}
+
+#logoPesquisar{
+	width:50px;
+	height:55px;
+	background-color:#75c398;
+	background-image:url(../image/pesquisar.png);
+	background-repeat: no-repeat;
+	position:relative;
+	float:left;
+	left: 354px;
+	background-position-x: 10px;
+	background-position-y: 13px;
+	background-position: 10px 10px;
+	cursor:pointer;
+}
+
+#pesquisar input[type=text]{
+	color:#75c398;
+	font-family:'Montserrat',sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+#abas{
+	width: auto;
+	height: 25px;
+	position: relative;
+	top: 30px;
+}
+
+#caixaAba1{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	left: 165px;
+}
+
+#seletorAba1 {
+	width: 100px;
+	height: 25px;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	cursor:pointer;
+	position:relative;
+	z-index:10000;
+	left: -65px;
+}
+
+#seletorAba2 {
+	width: 100px;
+	height: 25px;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	cursor:pointer;
+	position:relative;
+	z-index: 10000;
+	left: -65px;
+}
+
+#aba1 {
+	position:relative;
+	width:800px;
+	height:1200px;
+	left: 10px;
+	top: -50px;
+}
+
+#caixaTextoMontagem{
+	width: 770px;
+	height: 454px;
+	position: relative;
+	box-shadow: 1px 1.732px 3px 0px #7d7d7d;
+	top: 46px;
+	float:left;
+	box-sizing: border-box;
+	padding-left: 35px;
+}
+
+#caixaTextoErro{
+	margin-top: 50px;
+	width: 766px;
+	height: 85px;
+	box-shadow: 1px 1.732px 3px 0px #7d7d7d;
+	background-color: white;
+}
+
+#caixaCodigoBinario th{
+	width:370px;
+	text-align: center;
+	height:30px;
+	color:black;
+}
+
+#caixaCodigoBinario div{
+	text-align: center;
+	background-color:white;
+	color:black;
+	border: 1px solid #c0c0c0;
+	margin-bottom:2px;
+}
+
+#tableCodigoBinario{
+	margin-left: auto;
+   	margin-right: auto;
+}
+
+#caixaCodigoBinario{
+	position:relative;
+	top: 46px;
+	width: 770px;
+	height: 455px;
+	float: left;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: 1px 1.732px 3px 0px #7d7d7d;
+	display:none;
+}
+
+textarea{
+	resize:none;
+	border:none;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+	 outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.ativa{
+	background-color:#3e8e6b;
+}
+
+.inativa{
+	background-color: #75c398;
+}
+
+#registradores {
+	width: 260px;
+	height: 547px;
+	background-color: #75c398;
+	color: #555555;
+	top: 41px;
+	left: 515px;
+	overflow-y: auto;
+	position: relative;
+	overflow-x: hidden;
+	box-shadow: 1px 1.732px 3px 0px #7d7d7d;
+	z-index:1000px;
+}
+
+#registradores table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#registradores th{
+	width:145px;
+	color:white;
+}
+
+#registradores div{
+	margin-bottom:2px;
+	background-color: white;
+}
+
+::-webkit-scrollbar {  
+    width: 12px;  
+	height:20px;
+}  
+::-webkit-scrollbar-track {  
+    background-color: white;  
+    border-left: 1px solid #ccc;  
+}  
+::-webkit-scrollbar-thumb {  
+    background-color: #3e8e6b;
+}  
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #3e8e6b;
+}  
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;   
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+
+
+#memoria {
+	width:1040px;
+	height:250px;
+	background-color: #75c398;
+	overflow-y:auto;
+	overflow-x:auto;
+	color: #555555;
+	position:relative;
+	float:left;
+	top: 50px;
+	left: 175px;
+	box-shadow: 1px 1.732px 3px 0px #7d7d7d;
+}
+#memoria th{
+	width:500px;
+	color:white;
+}
+
+#memoria div{
+	background-color: white;
+	margin-bottom: 2px;
+}
+
+.textVazia{
+	color:red;
+}
+
+.codigoAtivo{
+	background-color: blue !important;
+}	
+
+#searchResult{
+	background-color:red;
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    width:22em;
+    height:23em;
+    margin-top: -11em; /*set to a negative number 1/2 of your height*/
+    margin-left: -11.5em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #78c49a;
+    color: #white;
+    box-shadow: 1px 1.732px 3px 0px #7d7d7d;
+    z-index:1500;
+    background-image:url(../image/duvida.png); 
+    background-repeat:no-repeat;
+    background-position: top;
+    background-position-y:15px;
+}
+
+.dialogIsOpen #all{
+  /* Blur and de-color */
+  -webkit-filter: blur(5px);
+  /* Recede */
+}
+
+.dialogIsOpen #menu{
+  /* Blur and de-color */
+  -webkit-filter: blur(5px);
+  /* Recede */
+}
+
+.dialogIsOpen #searchResult {
+  
+  /* Regular size and visible */
+  opacity: 1;
+
+  /* Clickable */
+  pointer-events: auto;
+
+}
+
+#all, #menu, #searchResult {
+  transition: all 0.4s ease; /* prefix me */
+}
+
+
+body {
+  /* Use at your own discretion */
+  -webkit-transform: translateZ(0);
+}
+
+.modalOpen{
+	display:none;
+} 
+
+
+#caixaSR{
+	position:relative;
+	background-color: #508b61;
+	height:150px;
+	top:126px;
+}
+
+#tituloSR{
+	position:inherit;
+	font-weight: bold;
+	font-size: 18px;
+	top:10px;
+}
+
+#sintaxeSR{
+	position: inherit;
+	font-size:16px;
+	top: 30px;
+}
+
+#descricaoSR{
+	position: inherit;
+	font-size:13px;
+	top: 55px;
+	margin-left:3px;
+}
+
+#codeLines {
+	padding-top:2px;
+	width: 25px;
+	color: #75c398;
+	position: relative;
+	top: 56px;
+	left: -770px;
+	border-right: 1px solid #c0c0c0;
+	background-color: white;
+	height: 450px;
+	overflow: hidden;
+	text-align: center;
+}

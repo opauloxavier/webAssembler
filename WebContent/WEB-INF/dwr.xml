@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://directwebremoting.org/schema/dwr30.dtd">
+
+<dwr>
+
+  <!-- init is only needed if you are extending DWR -->
+
+  <!-- without allow, DWR isn't allowed to do anything -->
+  <allow>
+    <create creator="new" javascript="AssemblerMips">
+    	<param name="class" value="assembler.AssemblerMips" />
+    </create>
+     <create creator="new" javascript="UCP">
+    	<param name="class" value="cpu.UCP" />
+    </create>
+     <create creator="new" javascript="Buscador">
+    	<param name="class" value="buscador.Buscador" />
+    </create>
+      <convert converter="exception" match="java.lang.Exception"/><convert converter="bean" match="java.lang.StackTraceElement"/>
+  </allow>
+
+  <!-- you may need to tell DWR about method signatures -->
+  <signatures>
+    ...
+  </signatures>
+  
+
+
+</dwr>
